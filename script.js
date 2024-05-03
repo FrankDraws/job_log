@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to display job details
     function showJobDetails(job) {
         jobDetails.innerHTML = `
-            <h2>Job Details</h2>
+            <h3>Job Details</h3>
             <p>Date: ${job.date}</p>
             <p>Company: ${job.company}</p>
             <p>Description: ${job.description}</p>

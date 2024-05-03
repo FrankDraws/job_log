@@ -8,3 +8,6 @@ body {
     place-items: center;
 }
 
+li {
+    padding-bottom: 1em;
+}
