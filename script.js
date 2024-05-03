@@ -12,14 +12,13 @@ async function fetchData(url) {
 function showJobDetails(job) {
     const detailsContainer = document.getElementById('job-details');
     if (detailsContainer) {
-        detailsContainer.innerHTML = `
-            <h2>Job Details</h2>
-            <p>Date: ${job.date}</p>
-            <p>Company: ${job.company}</p>
-            <p>Description: ${job.description}</p>
-        `;
+        detailsContainer.innerHTML = "<h2>Job Details</h2>" +
+                                      "<p>Date: " + job.date + "</p>" +
+                                      "<p>Company: " + job.company + "</p>" +
+                                      "<p>Description: " + job.description + "</p>";
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData('data.json')
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             jobs.forEach(job => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `
-                    <a href="#" onclick="showJobDetails(${JSON.stringify(job)})">
+                    <a href="#" onclick="showJobDetails(${JSON.stringify(job)}">
                         ${job.date} - ${job.company}
                     </a>
                 `;
