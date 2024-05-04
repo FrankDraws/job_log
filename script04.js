@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Store the job details in sessionStorage
         sessionStorage.setItem('selectedJob', JSON.stringify(job));
 
-        // Open a new window for job details
-        const newWindow = window.open('job-details.html', '_blank');
+         // Navigate to the job-details.html page in the same window
+    window.location.href = 'job-details.html';
     }
 
     // Function to populate job list
