@@ -1,3 +1,8 @@
+/*
+    Stylesheet for job-details.html of the Job App.
+
+*/
+
 body,
 html {
     margin: 0;
@@ -6,7 +11,6 @@ html {
 
 body {
     background-color: gainsboro;
-    margin: 1em;
 }
 @media (min-width: 768px) {
     body {
@@ -16,8 +20,8 @@ body {
         width: 100vw;
         height: 100vh;
         resize: both;
+        margin-top: -10%;
     }
-
 }
 
 /* Titles  */
@@ -26,26 +30,16 @@ h1 {
     margin: 0;
 }
 
-h3 {
-    margin: 0;
-    padding: 0;
-}
-
 /* Content  */
-/* #details {
-    padding: 1.5em;
-    background-color: #fff;
-} */
-
 #job-details-container {
     background-color: #fff;
-    margin: 0;
+    margin: 1.3em;
     padding: 1.3em 1.3em 2.4em;
+    border-radius: 20px;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
     /* max-width: 80ch; */
     /* min-width: 30vw; */
-    border-radius: 20px;
     /* outline: 1px solid red; */
-    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
 }
 
 button {
