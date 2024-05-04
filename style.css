@@ -24,7 +24,7 @@ h1 {
         padding: 1em;
     }
     section {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         padding: 1.5em;
         width: 80ch;
         }
