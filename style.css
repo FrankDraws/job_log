@@ -13,7 +13,7 @@ h1 {
 }
 
 /* Content  */
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     body {
         display: grid;
         place-items: center;
@@ -31,7 +31,7 @@ h1 {
     li {
         width: 70ch;
     }
- }
+}
 ul {
     margin: 0;
     padding: 0;

@@ -5,13 +5,19 @@ html {
 }
 
 body {
-    display: grid;
-    place-items: center;
-    justify-items: center;
-    width: 100vw;
-    height: 100vh;
-    resize: both;
     background-color: gainsboro;
+    margin: 1em;
+}
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        place-items: center;
+        justify-items: center;
+        width: 100vw;
+        height: 100vh;
+        resize: both;
+    }
+
 }
 
 /* Titles  */
@@ -26,19 +32,20 @@ h3 {
 }
 
 /* Content  */
-#details {
+/* #details {
     padding: 1.5em;
     background-color: #fff;
-}
+} */
 
 #job-details-container {
     background-color: #fff;
     margin: 0;
-    padding: 2.3em;
-    max-width: 80ch;
-    min-width: 30vw;
-    border-radius: 30px;
+    padding: 1.3em 1.3em 2.4em;
+    /* max-width: 80ch; */
+    /* min-width: 30vw; */
+    border-radius: 20px;
     /* outline: 1px solid red; */
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
 }
 
 button {
