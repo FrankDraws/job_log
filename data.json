@@ -2,16 +2,19 @@
   {
     "date": "May 1, 2024",
     "company": "Wendover Art Group, Largo, FL",
-    "description": "Art Consultant."
+    "position": "Art Consultant",
+    "description": "Consulting and curating for an art company."
   },
   {
     "date": "May 1, 2024",
     "company": "Universal Destinations & Experiences",
-    "description": "Creative Technologist with ATI/R&D at UniCreative."
+    "position": "Creative Technologist ",
+    "description": "With ATI/R&D at UniCreative."
   },
   {
     "date": "May 3, 2024",
-    "company": "Virtability (local web design agency)",
-    "description": "I reached out to Alysson Severe via email and offered to collaborate."
+    "company": "Virtability",
+    "position": "Freelance",
+    "description": "Local agency. I emailed Alyssa (Raiford) Sevener and offered to collaborate."
   }
 ]

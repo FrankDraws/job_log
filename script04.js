@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         jobList.innerHTML = ''; // Clear previous list
         jobs.forEach(function(job) {
             const listItem = document.createElement('li');
-            listItem.textContent = `${job.date} :: ${job.company}`;
+            listItem.textContent = `${job.date} / ${job.company}`;
             listItem.addEventListener('click', function(event) {
                 showJobDetails(event, job);
             });
