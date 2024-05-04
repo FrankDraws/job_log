@@ -8,6 +8,29 @@ body {
     place-items: center;
 }
 
-li {
-    padding-bottom: 1em;
+h3 {
+    margin: 0;
+    padding: 0;
+}
+/* 
+Left Column Log 
+*/
+ #left {
+    outline: 1px solid red;
+    width: 30%;
+ }
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* 
+Right Column Details 
+*/
+#right {
+    width: 70%;
+}
+#job-list > li {
+    cursor: pointer;
+    margin: 0 0 1.5em 0;
+    list-style: none;
 }
