@@ -1,2 +1,2 @@
 # Job Log
-Simple job log.
+A very, bare bones, job log. Version 0.1? Maybe. 
