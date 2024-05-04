@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sessionStorage.setItem('selectedJob', JSON.stringify(job));
 
          // Navigate to the job-details.html page in the same window
-    window.location.href = 'job-details.html';
+        window.location.href = 'job-details.html';
     }
 
     // Function to populate job list

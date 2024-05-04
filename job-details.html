@@ -9,11 +9,11 @@
     <title>Job Details</title>
     <link
         rel="stylesheet"
-        href="style.css"
+        href="style2.css"
     >
 </head>
 <body>
-    <h1>Job Details</h1>
+   
     <div id="job-details-container"></div>
 
     <script src="script.js"></script>
@@ -26,6 +26,7 @@
             if (selectedJob) {
                 const jobDetailsContainer = document.getElementById('job-details-container');
                 jobDetailsContainer.innerHTML = `
+                 <h1>Job Details</h1>
                     <p>Date: ${selectedJob.date}</p>
                     <p>Company: ${selectedJob.company}</p>
                     <p>Description: ${selectedJob.description}</p>
