@@ -7,14 +7,22 @@
         content="width=device-width, initial-scale=1.0"
     >
     <title>Job Details</title>
-    <link
-        rel="stylesheet"
-        href="style2.css"
-    >
+    <link rel="stylesheet" href="style2.css" >
+        <style>
+            /* CSS for fading in */
+            .fade-in {
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+        
+            .fade-in.show {
+                opacity: 1;
+            }
+        </style>
 </head>
 <body>
    
-    <div id="job-details-container"></div>
+    <div id="job-details-container" class="fade-in"></div>
 
     <script src="script.js"></script>
     <script>
@@ -32,6 +40,11 @@
                     <p><strong>Description:</strong> ${selectedJob.description}</p>
                     <button onclick="window.location.href='index.html'">Home</button>
                 `;
+                // Trigger fade-in animation after a short delay
+                setTimeout(function () {
+                    jobDetailsContainer.classList.add('show');
+                }, 50);
+
             } else {
                 // Handle case where no job details are found in sessionStorage
                 console.error('No job details found in sessionStorage');
