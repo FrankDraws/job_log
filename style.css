@@ -2,65 +2,49 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 body {
-    display: grid;
-    place-items: center;
-    background: lightblue;
-    width: 100vw;
-    height: 100vh;
-    resize: both;
     background-color: #fff;
+    margin: 1em;
 }
 
 /* Titles  */
 h1 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-h3 {
-    margin: 0;
-    padding: 0;
-}
+
 /* Content  */
- #log {
-    /* outline: 1px solid red; */
-    /* height: auto; */
-    padding: 1.5em;
+ @media (min-width: 768px) {
+    body {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+        resize: both;
+        background-color: #fff;
+        padding: 1em;
+    }
+    section {
+        outline: 1px solid red;
+        padding: 1.5em;
+        width: 80ch;
+        }
+    li {
+        width: 70ch;
+    }
  }
 ul {
     margin: 0;
     padding: 0;
 }
-
-#details {
-    /* width: 70%; */
-    height: auto;
-    padding: 1.5em;
-    background-color: #fff;
-    /* border-radius: 25px; */
-}
-#job-details {
-    background-color: #fff;
-}
-#job-list > li {
+li {
+    background: #e7e7e7;
+    padding: 1em;
+    border-radius: 0.7em;
     cursor: pointer;
     margin: 0 0 1.5em 0;
     list-style: none;
 }
-#job-details-container {
-    margin: 0;
-    padding: 0;
-    height: 50vh;
-}
-li {
-    width: 70ch;
-    background: #e7e7e7;
-    padding: 1em;
-    border-radius: 0.7em;
-}
-button {
-    text-align: left;
-}
+
 
 /* 
   Font Clamp  
