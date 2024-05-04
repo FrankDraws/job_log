@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Job Details</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+<body>
+    <h1>Job Details</h1>
+    <div id="job-details-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve job details from sessionStorage
+            const selectedJob = JSON.parse(sessionStorage.getItem('selectedJob'));
+
+            // Display job details
+            if (selectedJob) {
+                const jobDetailsContainer = document.getElementById('job-details-container');
+                jobDetailsContainer.innerHTML = `
+                    <p>Date: ${selectedJob.date}</p>
+                    <p>Company: ${selectedJob.company}</p>
+                    <p>Description: ${selectedJob.description}</p>
+                    <button onclick="window.location.href='index.html'">Home</button>
+                `;
+            } else {
+                // Handle case where no job details are found in sessionStorage
+                console.error('No job details found in sessionStorage');
+            }
+        });
+    </script>
+</body>
+</html>

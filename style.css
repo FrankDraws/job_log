@@ -6,6 +6,10 @@ body, html {
 body {
     display: grid;
     place-items: center;
+    background: lightblue;
+    width: 100vw;
+    height: 100vh;
+    resize: both;
     background-color: gainsboro;
 }
 
