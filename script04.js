@@ -38,3 +38,34 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Error fetching data:', error);
         });
 });
+
+// Python log data script
+
+function logData() {
+    var data = {
+        Date: new Date().toISOString(),
+        Company: document.getElementById("company").value,
+        Position: document.getElementById("position").value,
+        Description: document.getElementById("description").value
+    };
+
+    // Send data to Python script for logging
+    fetch('/log_data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Data logged successfully.');
+            // You can perform additional actions here, like refreshing the UI
+        } else {
+            console.error('Failed to log data.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
